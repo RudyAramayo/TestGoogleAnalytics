@@ -99,7 +99,7 @@ NSString *const kGASavedHitsKey = @"_googleAnalyticsOLDHits_";
     if (self) {
         self.hits = [NSMutableArray array];
         self.httpClient = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:kGAReceiverURLString]];
-        self.dispatchInterval = 10;
+        self.dispatchInterval = 5;
         
 #ifdef DEBUG
         self.debug = YES;
@@ -358,22 +358,23 @@ NSString *const kGASavedHitsKey = @"_googleAnalyticsOLDHits_";
         
         
         
-        
-        NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
-        
-        
+        /* //Initial HTTP Example of a working post...
+         
+        //NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
         //[request setURL:[NSURL URLWithString:@"http://www.google-analytics.com/collect?v=1&tid=UA-39578560-1&cid=555&t=pageview&dp=%2Fhome"]];
+        
         [request setURL:[NSURL URLWithString:@"http://www.google-analytics.com/collect?v=1&tid=UA-39578560-1&cid=4b728be2-4785-48cf-a138-f7d78926fb7a&t=pageview&dh=shopinout.com&dp=%2FofflineConversionPageWithGET.html&dt=OfflineConversionPage&z=1352847994310"]];
         
         NSURLResponse* response;
         NSError* error = nil;
+         
         
         //Capturing server response
         NSData* result = [NSURLConnection sendSynchronousRequest:request  returningResponse:&response error:&error];
         NSString *resultString = [NSString stringWithUTF8String:[result bytes]];
         NSLog(@"result = %@", [resultString description]);
         NSLog(@"response = %@", [response description]);
-        
+        */
         
         [self.httpClient postPath:@"/collect" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSLog(@"succes post info (%@) %@", params, [NSString stringWithUTF8String:[(NSData *)responseObject bytes]]);
