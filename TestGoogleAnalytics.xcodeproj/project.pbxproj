@@ -13,7 +13,39 @@
 		CAAB770517020DA90057980F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CAAB770317020DA90057980F /* Credits.rtf */; };
 		CAAB770817020DA90057980F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB770717020DA90057980F /* AppDelegate.m */; };
 		CAAB770B17020DAA0057980F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAB770917020DAA0057980F /* MainMenu.xib */; };
+		CAAB771217020DD70057980F /* ExceptionHandling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB771117020DD70057980F /* ExceptionHandling.framework */; };
+		CAAB771417020DDC0057980F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB771317020DDC0057980F /* WebKit.framework */; };
+		CAAB771617020DE30057980F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB771517020DE30057980F /* SystemConfiguration.framework */; };
+		CAAB772317020E700057980F /* GAEventHit.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB771817020E700057980F /* GAEventHit.m */; };
+		CAAB772417020E700057980F /* GAExceptionHit.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB771A17020E700057980F /* GAExceptionHit.m */; };
+		CAAB772517020E700057980F /* GAGeneralEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB771C17020E700057980F /* GAGeneralEvent.m */; };
+		CAAB772617020E700057980F /* GASocialHit.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB771F17020E700057980F /* GASocialHit.m */; };
+		CAAB772717020E700057980F /* GATracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB772217020E700057980F /* GATracking.m */; };
+		CAAB776E17020EE10057980F /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB775C17020EE10057980F /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		CAAB776F17020EE10057980F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB775E17020EE10057980F /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		CAAB777017020EE10057980F /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB776017020EE10057980F /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		CAAB777117020EE10057980F /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB776217020EE10057980F /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		CAAB777217020EE10057980F /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB776417020EE10057980F /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		CAAB777317020EE10057980F /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB776717020EE10057980F /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		CAAB777417020EE10057980F /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB776917020EE10057980F /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		CAAB777517020EE10057980F /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB776B17020EE10057980F /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		CAAB777617020EE10057980F /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB776D17020EE10057980F /* UIImageView+AFNetworking.m */; };
+		CAAB778017020F050057980F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB777F17020F050057980F /* Security.framework */; };
+		CAAB778217020F120057980F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB778117020F120057980F /* CoreServices.framework */; };
+		CAAB77A61702113F0057980F /* GoogleAnaliticsIDFile in Resources */ = {isa = PBXBuildFile; fileRef = CAAB77A51702113F0057980F /* GoogleAnaliticsIDFile */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CAAB77A2170210670057980F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CAAB76F017020DA90057980F /* TestGoogleAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGoogleAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +61,43 @@
 		CAAB770617020DA90057980F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CAAB770717020DA90057980F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CAAB770A17020DAA0057980F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CAAB771117020DD70057980F /* ExceptionHandling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExceptionHandling.framework; path = System/Library/Frameworks/ExceptionHandling.framework; sourceTree = SDKROOT; };
+		CAAB771317020DDC0057980F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CAAB771517020DE30057980F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CAAB771717020E700057980F /* GAEventHit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAEventHit.h; sourceTree = "<group>"; };
+		CAAB771817020E700057980F /* GAEventHit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAEventHit.m; sourceTree = "<group>"; };
+		CAAB771917020E700057980F /* GAExceptionHit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAExceptionHit.h; sourceTree = "<group>"; };
+		CAAB771A17020E700057980F /* GAExceptionHit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAExceptionHit.m; sourceTree = "<group>"; };
+		CAAB771B17020E700057980F /* GAGeneralEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAGeneralEvent.h; sourceTree = "<group>"; };
+		CAAB771C17020E700057980F /* GAGeneralEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAGeneralEvent.m; sourceTree = "<group>"; };
+		CAAB771D17020E700057980F /* GAHit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAHit.h; sourceTree = "<group>"; };
+		CAAB771E17020E700057980F /* GASocialHit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GASocialHit.h; sourceTree = "<group>"; };
+		CAAB771F17020E700057980F /* GASocialHit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GASocialHit.m; sourceTree = "<group>"; };
+		CAAB772017020E700057980F /* GATracking-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GATracking-Prefix.pch"; sourceTree = "<group>"; };
+		CAAB772117020E700057980F /* GATracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GATracking.h; sourceTree = "<group>"; };
+		CAAB772217020E700057980F /* GATracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GATracking.m; sourceTree = "<group>"; };
+		CAAB775B17020EE10057980F /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		CAAB775C17020EE10057980F /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		CAAB775D17020EE10057980F /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		CAAB775E17020EE10057980F /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		CAAB775F17020EE10057980F /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		CAAB776017020EE10057980F /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		CAAB776117020EE10057980F /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		CAAB776217020EE10057980F /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		CAAB776317020EE10057980F /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		CAAB776417020EE10057980F /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		CAAB776517020EE10057980F /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		CAAB776617020EE10057980F /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		CAAB776717020EE10057980F /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		CAAB776817020EE10057980F /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		CAAB776917020EE10057980F /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		CAAB776A17020EE10057980F /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		CAAB776B17020EE10057980F /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		CAAB776C17020EE10057980F /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		CAAB776D17020EE10057980F /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		CAAB777F17020F050057980F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CAAB778117020F120057980F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		CAAB77A51702113F0057980F /* GoogleAnaliticsIDFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GoogleAnaliticsIDFile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +105,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAAB778217020F120057980F /* CoreServices.framework in Frameworks */,
+				CAAB778017020F050057980F /* Security.framework in Frameworks */,
+				CAAB771617020DE30057980F /* SystemConfiguration.framework in Frameworks */,
+				CAAB771417020DDC0057980F /* WebKit.framework in Frameworks */,
+				CAAB771217020DD70057980F /* ExceptionHandling.framework in Frameworks */,
 				CAAB76F517020DA90057980F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +137,11 @@
 		CAAB76F317020DA90057980F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CAAB778117020F120057980F /* CoreServices.framework */,
+				CAAB777F17020F050057980F /* Security.framework */,
+				CAAB771517020DE30057980F /* SystemConfiguration.framework */,
+				CAAB771317020DDC0057980F /* WebKit.framework */,
+				CAAB771117020DD70057980F /* ExceptionHandling.framework */,
 				CAAB76F417020DA90057980F /* Cocoa.framework */,
 				CAAB76F617020DA90057980F /* Other Frameworks */,
 			);
@@ -82,6 +161,19 @@
 		CAAB76FA17020DA90057980F /* TestGoogleAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				CAAB775A17020EE10057980F /* AFNetworking */,
+				CAAB771717020E700057980F /* GAEventHit.h */,
+				CAAB771817020E700057980F /* GAEventHit.m */,
+				CAAB771917020E700057980F /* GAExceptionHit.h */,
+				CAAB771A17020E700057980F /* GAExceptionHit.m */,
+				CAAB771B17020E700057980F /* GAGeneralEvent.h */,
+				CAAB771C17020E700057980F /* GAGeneralEvent.m */,
+				CAAB771D17020E700057980F /* GAHit.h */,
+				CAAB771E17020E700057980F /* GASocialHit.h */,
+				CAAB771F17020E700057980F /* GASocialHit.m */,
+				CAAB772017020E700057980F /* GATracking-Prefix.pch */,
+				CAAB772117020E700057980F /* GATracking.h */,
+				CAAB772217020E700057980F /* GATracking.m */,
 				CAAB770617020DA90057980F /* AppDelegate.h */,
 				CAAB770717020DA90057980F /* AppDelegate.m */,
 				CAAB770917020DAA0057980F /* MainMenu.xib */,
@@ -94,12 +186,40 @@
 			isa = PBXGroup;
 			children = (
 				CAAB76FC17020DA90057980F /* TestGoogleAnalytics-Info.plist */,
+				CAAB77A51702113F0057980F /* GoogleAnaliticsIDFile */,
 				CAAB76FD17020DA90057980F /* InfoPlist.strings */,
 				CAAB770017020DA90057980F /* main.m */,
 				CAAB770217020DA90057980F /* TestGoogleAnalytics-Prefix.pch */,
 				CAAB770317020DA90057980F /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAAB775A17020EE10057980F /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CAAB775B17020EE10057980F /* AFHTTPClient.h */,
+				CAAB775C17020EE10057980F /* AFHTTPClient.m */,
+				CAAB775D17020EE10057980F /* AFHTTPRequestOperation.h */,
+				CAAB775E17020EE10057980F /* AFHTTPRequestOperation.m */,
+				CAAB775F17020EE10057980F /* AFImageRequestOperation.h */,
+				CAAB776017020EE10057980F /* AFImageRequestOperation.m */,
+				CAAB776117020EE10057980F /* AFJSONRequestOperation.h */,
+				CAAB776217020EE10057980F /* AFJSONRequestOperation.m */,
+				CAAB776317020EE10057980F /* AFNetworkActivityIndicatorManager.h */,
+				CAAB776417020EE10057980F /* AFNetworkActivityIndicatorManager.m */,
+				CAAB776517020EE10057980F /* AFNetworking.h */,
+				CAAB776617020EE10057980F /* AFPropertyListRequestOperation.h */,
+				CAAB776717020EE10057980F /* AFPropertyListRequestOperation.m */,
+				CAAB776817020EE10057980F /* AFURLConnectionOperation.h */,
+				CAAB776917020EE10057980F /* AFURLConnectionOperation.m */,
+				CAAB776A17020EE10057980F /* AFXMLRequestOperation.h */,
+				CAAB776B17020EE10057980F /* AFXMLRequestOperation.m */,
+				CAAB776C17020EE10057980F /* UIImageView+AFNetworking.h */,
+				CAAB776D17020EE10057980F /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			path = ../third_party/AFNetworking/AFNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +232,7 @@
 				CAAB76EC17020DA90057980F /* Sources */,
 				CAAB76ED17020DA90057980F /* Frameworks */,
 				CAAB76EE17020DA90057980F /* Resources */,
+				CAAB77A2170210670057980F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -156,6 +277,7 @@
 				CAAB76FF17020DA90057980F /* InfoPlist.strings in Resources */,
 				CAAB770517020DA90057980F /* Credits.rtf in Resources */,
 				CAAB770B17020DAA0057980F /* MainMenu.xib in Resources */,
+				CAAB77A61702113F0057980F /* GoogleAnaliticsIDFile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +290,20 @@
 			files = (
 				CAAB770117020DA90057980F /* main.m in Sources */,
 				CAAB770817020DA90057980F /* AppDelegate.m in Sources */,
+				CAAB772317020E700057980F /* GAEventHit.m in Sources */,
+				CAAB772417020E700057980F /* GAExceptionHit.m in Sources */,
+				CAAB772517020E700057980F /* GAGeneralEvent.m in Sources */,
+				CAAB772617020E700057980F /* GASocialHit.m in Sources */,
+				CAAB772717020E700057980F /* GATracking.m in Sources */,
+				CAAB776E17020EE10057980F /* AFHTTPClient.m in Sources */,
+				CAAB776F17020EE10057980F /* AFHTTPRequestOperation.m in Sources */,
+				CAAB777017020EE10057980F /* AFImageRequestOperation.m in Sources */,
+				CAAB777117020EE10057980F /* AFJSONRequestOperation.m in Sources */,
+				CAAB777217020EE10057980F /* AFNetworkActivityIndicatorManager.m in Sources */,
+				CAAB777317020EE10057980F /* AFPropertyListRequestOperation.m in Sources */,
+				CAAB777417020EE10057980F /* AFURLConnectionOperation.m in Sources */,
+				CAAB777517020EE10057980F /* AFXMLRequestOperation.m in Sources */,
+				CAAB777617020EE10057980F /* UIImageView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +392,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestGoogleAnalytics\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestGoogleAnalytics/TestGoogleAnalytics-Prefix.pch";
 				INFOPLIST_FILE = "TestGoogleAnalytics/TestGoogleAnalytics-Info.plist";
@@ -268,6 +408,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestGoogleAnalytics\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestGoogleAnalytics/TestGoogleAnalytics-Prefix.pch";
 				INFOPLIST_FILE = "TestGoogleAnalytics/TestGoogleAnalytics-Info.plist";
