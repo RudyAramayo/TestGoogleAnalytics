@@ -16,7 +16,7 @@
 
 - (NSDictionary *)dictionaryRepresentation
 {
-    NSMutableDictionary *dict = [@{@"t" : @"event", @"ni" : @(self.nonInteractive)} mutableCopy];
+    NSMutableDictionary *dict = [@{@"t" : @"event"} mutableCopy];
     
     if (self.category)
         [dict setValue:self.category forKey:@"ec"];
@@ -24,11 +24,11 @@
     if (self.action)
         [dict setValue:self.action forKey:@"ea"];
     
-    if (self.label)
-        [dict setValue:self.label forKey:@"el"];
+    //if (self.label)
+    //    [dict setValue:self.label forKey:@"el"];
     
-    if (self.value)
-        [dict setValue:self.value forKey:@"ev"];
+    //if (self.value)
+    //    [dict setValue:self.value forKey:@"ev"];
     
     return [NSDictionary dictionaryWithDictionary:dict];
 }

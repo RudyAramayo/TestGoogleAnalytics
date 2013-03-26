@@ -15,7 +15,7 @@
 
 - (NSDictionary *)dictionaryRepresentation
 {
-    NSMutableDictionary *dict = [@{@"t" : @"exception", @"ni" : @(self.nonInteractive)} mutableCopy];
+    NSMutableDictionary *dict = [@{@"t" : @"exception"} mutableCopy];
     
     if (self.description)
         [dict setValue:self.description forKey:@"exd"];

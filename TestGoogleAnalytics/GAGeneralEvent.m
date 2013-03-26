@@ -49,7 +49,7 @@
         default:
             break;
     }
-    NSMutableDictionary *dict = [@{@"t" : hitTypeString, @"ni" : @(self.nonInteractive)} mutableCopy];
+    NSMutableDictionary *dict = [@{@"t" : hitTypeString} mutableCopy];
     
     if (self.contentDescription)
         [dict setValue:self.contentDescription forKey:@"cd"];

@@ -40,7 +40,7 @@ NSString *const kGASavedHitsKey = @"_googleAnalyticsOLDHits_";
 @synthesize clientId = _clientId;
 
 + (GATracking *)sharedTracker {
-    static GATracking *_sharedTracker = nil;
+    static GATracking *_sharedTracker =     nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         NSString *googleID = nil;
@@ -306,7 +306,7 @@ NSString *const kGASavedHitsKey = @"_googleAnalyticsOLDHits_";
 {
     NSAssert(self.trackingId, @"Tracking ID not specified");
     NSDictionary *defaultParams = @{@"v" : kGAVersion, @"tid" : self.trackingId, @"cid" : self.clientId,
-    @"an" : @(self.anonymize),
+    @"an" : @"Klink Mac Sync",//@(self.anonymize),
     @"sr" : [self screenResolution],
     @"sd" : [self screenColors],
     @"ul" : [self userLanguage],
@@ -324,7 +324,7 @@ NSString *const kGASavedHitsKey = @"_googleAnalyticsOLDHits_";
         if ([obj isKindOfClass:[NSDictionary class]]) {
             [params addEntriesFromDictionary:params];
             [params addEntriesFromDictionary:@{
-             @"an" : [self appName],
+             @"an" : @"Klink Mac Sync",//[self appName],
              @"av" : [self appVersion],
              }];
         } else {
@@ -332,7 +332,7 @@ NSString *const kGASavedHitsKey = @"_googleAnalyticsOLDHits_";
             
 //            if ([hit isMobile]) {
                 [params addEntriesFromDictionary:@{
-                 @"an" : [self appName],
+                 @"an" : @"Klink Mac Sync",//[self appName],
                  @"av" : [self appVersion],
                  }];
 //            }
@@ -349,10 +349,30 @@ NSString *const kGASavedHitsKey = @"_googleAnalyticsOLDHits_";
         if (self.hits.count == 1 && (self.terminating || (self.sessionChanged && !self.sessionStart))) {
             [params addEntriesFromDictionary:@{ @"sc" : @"stop" }];
         }
+        _useHttps = NO;
+        self.httpClient = [AFHTTPClient clientWithBaseURL:
+                           [NSURL URLWithString:(_useHttps ? kGASecureReceiverURLString : kGAReceiverURLString)]];
         
-        self.httpClient = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:kGAReceiverURLString]];
-
         NSLog(@"httpClient = %@", self.httpClient);
+
+        
+        
+        
+        
+        NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
+        
+        
+        //[request setURL:[NSURL URLWithString:@"http://www.google-analytics.com/collect?v=1&tid=UA-39578560-1&cid=555&t=pageview&dp=%2Fhome"]];
+        [request setURL:[NSURL URLWithString:@"http://www.google-analytics.com/collect?v=1&tid=UA-39578560-1&cid=4b728be2-4785-48cf-a138-f7d78926fb7a&t=pageview&dh=shopinout.com&dp=%2FofflineConversionPageWithGET.html&dt=OfflineConversionPage&z=1352847994310"]];
+        
+        NSURLResponse* response;
+        NSError* error = nil;
+        
+        //Capturing server response
+        NSData* result = [NSURLConnection sendSynchronousRequest:request  returningResponse:&response error:&error];
+        NSString *resultString = [NSString stringWithUTF8String:[result bytes]];
+        NSLog(@"result = %@", [resultString description]);
+        NSLog(@"response = %@", [response description]);
         
         
         [self.httpClient postPath:@"/collect" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {

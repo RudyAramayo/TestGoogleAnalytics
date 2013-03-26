@@ -16,7 +16,7 @@
 
 - (NSDictionary *)dictionaryRepresentation
 {
-    NSMutableDictionary *dict = [@{@"t" : @"social", @"ni" : @(self.nonInteractive)} mutableCopy];
+    NSMutableDictionary *dict = [@{@"t" : @"social"} mutableCopy];
     
     if (self.network)
         [dict setValue:self.network forKey:@"sn"];
