@@ -162,18 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				CAAB775A17020EE10057980F /* AFNetworking */,
-				CAAB771717020E700057980F /* GAEventHit.h */,
-				CAAB771817020E700057980F /* GAEventHit.m */,
-				CAAB771917020E700057980F /* GAExceptionHit.h */,
-				CAAB771A17020E700057980F /* GAExceptionHit.m */,
-				CAAB771B17020E700057980F /* GAGeneralEvent.h */,
-				CAAB771C17020E700057980F /* GAGeneralEvent.m */,
-				CAAB771D17020E700057980F /* GAHit.h */,
-				CAAB771E17020E700057980F /* GASocialHit.h */,
-				CAAB771F17020E700057980F /* GASocialHit.m */,
-				CAAB772017020E700057980F /* GATracking-Prefix.pch */,
-				CAAB772117020E700057980F /* GATracking.h */,
-				CAAB772217020E700057980F /* GATracking.m */,
+				CAAB77CC170241260057980F /* Google Analytics */,
 				CAAB770617020DA90057980F /* AppDelegate.h */,
 				CAAB770717020DA90057980F /* AppDelegate.m */,
 				CAAB770917020DAA0057980F /* MainMenu.xib */,
@@ -220,6 +209,25 @@
 			);
 			name = AFNetworking;
 			path = ../third_party/AFNetworking/AFNetworking;
+			sourceTree = "<group>";
+		};
+		CAAB77CC170241260057980F /* Google Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				CAAB771717020E700057980F /* GAEventHit.h */,
+				CAAB771817020E700057980F /* GAEventHit.m */,
+				CAAB771917020E700057980F /* GAExceptionHit.h */,
+				CAAB771A17020E700057980F /* GAExceptionHit.m */,
+				CAAB771B17020E700057980F /* GAGeneralEvent.h */,
+				CAAB771C17020E700057980F /* GAGeneralEvent.m */,
+				CAAB771D17020E700057980F /* GAHit.h */,
+				CAAB771E17020E700057980F /* GASocialHit.h */,
+				CAAB771F17020E700057980F /* GASocialHit.m */,
+				CAAB772017020E700057980F /* GATracking-Prefix.pch */,
+				CAAB772117020E700057980F /* GATracking.h */,
+				CAAB772217020E700057980F /* GATracking.m */,
+			);
+			name = "Google Analytics";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,6 +447,7 @@
 				CAAB771017020DAA0057980F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
